@@ -41,8 +41,8 @@ const html = () => {
 const scripts = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
-  .pipe(gulp.dest('build/js'));
-  // .pipe(browser.stream());
+  .pipe(gulp.dest('build/js'))
+  .pipe(browser.stream());
 }
 
 // Images
@@ -76,7 +76,7 @@ const svg = () =>
   .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-  return gulp.src('source/img/icons/**/*.svg')
+  return gulp.src('source/img/**/*.svg')
   .pipe(svgo())
   .pipe(svgstore({
   inlineSvg: true
