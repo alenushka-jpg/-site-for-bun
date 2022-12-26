@@ -9,33 +9,64 @@
   </head>
   <body>
     <header class="header">
-      <svg width="60" height="60">
-        <use xlink:href="./img/sprite.svg#logo"></use>
-      </svg>
-      <ul>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Mail me</a></li>
-      </ul>
+      <div class="header__container container">
+        <svg width="60" height="60">
+          <use xlink:href="./img/sprite.svg#logo"></use>
+        </svg>
+        <nav>
+          <button class="header__burger" type="button">
+            <div>
+              <span class="visually-hidden">Open the menu</span>
+              <svg class="header__burger-svg" width="48" height="48">
+                <use xlink:href="./img/sprite.svg#burger"></use>
+              </svg>
+            </div>
+            <div>
+              <span class="visually-hidden">Close the menu</span>
+              <svg class="header__close-svg" width="48" height="48">
+                <use xlink:href="./img/sprite.svg#close-icon"></use>
+              </svg>
+            </div>
+          </button>
+          <ul class="header__list">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Mail me</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="promo">
-        <h1>Hello, I'm Ivan!</h1>
-        <p>
-          I'm Junior UX/UI Designer based in Israel. Let's do something good!
-        </p>
-        <p>
-          Сurrently I'm
-          <span>looking for a job.</span>
+      <section class="promo container">
+        <div class="promo__info">
+          <h1>Hello, I'm Ivan!</h1>
+          <p class="promo__paragraph">
+            I'm
+            <span class="accent">Junior UX/UI Designer</span>
+            based in Israel.
+            <br>
+            Let's
+            <span class="accent">do</span>
+            something
+            <span class="accent">good!</span>
+          </p>
+          <p class="promo__paragraph">
+            Сurrently I'm
+            <span class="accent">looking for a job.</span>
 
-          Maybe you are my future employee?
-          <span>Text me!</span>
-        </p>
-        <a href="mailto:hello@sytyakov.com">hello@sytyakov.com</a>
+            Maybe you are my future employee?
+            <span class="accent">Text me!</span>
+          </p>
+          <a href="mailto:hello@sytyakov.com">hello@sytyakov.com</a>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="./img/bun.webp 1x" />
+          <img src="./img/bun.png" width="400" height="400" alt="author's photo"/>
+        </picture>
       </section>
     </main>
-    <footer class="footer">
-      <ul>
+    <footer class="footer container">
+      <ul class="footer__list">
         <li>
           <a href="https://www.linkedin.com/in/sytyakov/">
             <svg width="20" height="20">

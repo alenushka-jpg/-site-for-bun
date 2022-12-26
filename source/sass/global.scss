@@ -9,14 +9,10 @@ html {
 }
 
 body {
-  position: relative;
-  height: 100%;
-  width: 100%;
+  color: $main-color;
+  font-size: 16px;
+  line-height: 18px;
   font-family: $main-font;
-  font-size: 14px;
-  line-height: 30px;
-  color: $light-gray;
-  background-color: $background-color;
 }
 
 *,
@@ -25,70 +21,16 @@ body {
   box-sizing: inherit;
 }
 
-a {
-  color: inherit;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-h2 {
-  position: relative;
-  font-family: $secondary-font;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 53px;
-  color: $accent-color;
-
-  @media (max-width: 524px) {
-    font-size: 42px;
-    line-height: 46px;
-  }
-}
-
-.button {
-  padding: 24px 30px;
-  width: 250px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  font-family: $main-font;
-  border: 0;
-  border-radius: 10px;
-  text-align: center;
-  background-color: inherit;
-  cursor: pointer;
-}
-
 .container {
-  padding: 0 100px;
+  max-width: $desktop-width;
+  padding: 0 30px;
   margin: 0 auto;
-  max-width: 1440px;
-
-  @media (max-width: $desktop-width) {
-    padding: 0 40px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding: 0 20px;
-  }
-
-  @media (max-width: 524px) {
-    padding: 0 15px;
-  }
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: rgba($black-basic, 0.7);
-  cursor: pointer;
 }
 
 .visually-hidden {
@@ -102,4 +44,11 @@ h2 {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.accent {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: -0.03em;
 }
