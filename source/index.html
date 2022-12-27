@@ -43,8 +43,9 @@
           <p class="promo__paragraph">
             I'm
             <span class="accent">Junior UX/UI Designer</span>
+            <br />
             based in Israel.
-            <br>
+            <br />
             Let's
             <span class="accent">do</span>
             something
@@ -52,17 +53,19 @@
           </p>
           <p class="promo__paragraph">
             Сurrently I'm
-            <span class="accent">looking for a job.</span>
-
+            <span class="accent-less">looking for a job.</span>
+            <br />
             Maybe you are my future employee?
-            <span class="accent">Text me!</span>
+            <br />
+            <span class="accent-less">Text me!</span>
           </p>
-          <a href="mailto:hello@sytyakov.com">hello@sytyakov.com</a>
+          <a class="promo__link" href="mailto:hello@sytyakov.com">
+            <svg width="14" height="14">
+              <use xlink:href="./img/sprite.svg#plane"></use>
+            </svg>
+            hello@sytyakov.com</a>
         </div>
-        <picture>
-          <source type="image/webp" srcset="./img/bun.webp 1x" />
-          <img src="./img/bun.png" width="400" height="400" alt="author's photo"/>
-        </picture>
+        <img class="promo__img" src="./img/avatar.png" width="400" height="400" alt="author's photo"/>
       </section>
     </main>
     <footer class="footer container">
@@ -89,12 +92,12 @@
           </a>
         </li>
       </ul>
-      <div class="copyright">
+      <div class="footer__copyright">
         <p>
-          Design by Ivanushka.jpg
-          <svg width="20" height="20">
+          Design by Ivanushka.jpg&nbsp;
+          <svg width="14" height="12">
             <use xlink:href="./img/sprite.svg#heart-icon"></use>
-          </svg>
+          </svg>&nbsp;
           <a href="https://github.com/alenushka-jpg">Code by Alenushka.jpg</a>
         </p>
       </div>

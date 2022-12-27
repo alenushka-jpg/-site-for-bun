@@ -10,6 +10,10 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .header__list li {
@@ -31,4 +35,24 @@
   border: 0;
   padding: 0;
   background-color: inherit;
+  cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+  }
+}
+
+.header__burger-svg {
+  @media (max-width: $mobile-width) {
+    width: 30px;
+    height: 27px;
+  }
+}
+
+.header__close-svg {
+  @media (max-width: $mobile-width) {
+    display: none;
+    width: 24px;
+    height: 24px
+  }
 }
