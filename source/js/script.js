@@ -1,9 +1,6 @@
-const header = document.querySelector('.page-header');
-const burger = document.querySelector('.page-header__burger');
-const certificates = document.querySelector('.certificates');
-const certificatesOpen = document.querySelector('.promo___certificates');
-const certificatesClose = document.querySelector('.certificates__button');
-const overlay = document.querySelector('.overlay');
+const header = document.querySelector('.header');
+const burger = document.querySelector('.header__burger');
+const navClose = document.querySelector('.header__close');
 const body = document.querySelector('body');
 
 function bodyHidden() {
@@ -18,57 +15,27 @@ function bodyVisible() {
 
 //drop-down menu script
 function showHeader() {
-  header.classList.toggle('page-header--open');
+  header.classList.toggle('header--open');
 };
 
 function onHeaderClick() {
   showHeader();
 };
 
+function hiddenHeader() {
+  header.classList.remove('header--open');
+};
+
 burger.addEventListener('click', onHeaderClick);
-
-
-//certificates script
-function showCertificates() {
-  certificates.classList.add('certificates--open');
-};
-
-function onCertificatesClick() {
-  showCertificates();
-  bodyHidden();
-};
-
-function hiddenCertificates() {
-  certificates.classList.remove('certificates--open');
-};
-
-function onCloseCertificatesClick() {
-  hiddenCertificates();
-  bodyVisible();
-};
-
-certificatesOpen.addEventListener('click', onCertificatesClick);
-certificatesClose.addEventListener('click', onCloseCertificatesClick);
-
-if (overlay) {
-  overlay.addEventListener('click', hiddenCertificates);
-};
-
-if (overlay) {
-  overlay.addEventListener('click', bodyVisible);
-};
+navClose.addEventListener('click', hiddenHeader);
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (header.classList.contains('page-header--open')) {
+    if (header.classList.contains('header--open')) {
       evt.preventDefault();
-      header.classList.remove('page-header--open');
+      header.classList.remove('header--open');
       bodyVisible();
     }
-    if (certificates.classList.contains('certificates--open')) {
-      evt.preventDefault();
-      certificates.classList.remove('certificates--open');
-      bodyVisible();
-    }
+
   }
 });
