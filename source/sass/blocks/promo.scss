@@ -3,28 +3,33 @@
   grid-template-columns: 1fr 1fr;
   padding-top: 62px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 193px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-top: 144px;
+    padding-top: 125px;
   }
 }
 
 .promo h1 {
+  width: 145px;
   margin: 0;
   padding-top: 23px;
-  padding-right: 18px;
   font-weight: 700;
   font-size: 36px;
   line-height: 41px;
   letter-spacing: -0.03em;
 
   @media (min-width: $tablet-width) {
+    width: auto;
     margin-bottom: 4px;
     font-size: 45px;
     line-height: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 38px;
+    padding-top: 38px;
     margin-bottom: 20px;
     font-size: 55px;
     line-height: 63px;
@@ -58,7 +63,22 @@
       font-size: 26px;
       line-height: 30px;
     }
+  }
 
+  @media (min-width: $desktop-width) {
+    &:first-of-type {
+      margin-top: 0;
+      margin-bottom: 34px;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 41px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 28px;
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 }
 
@@ -99,7 +119,7 @@
   display: block;
   grid-column: 2/3;
   grid-row: 1/2;
-  margin-left: auto;
+  margin-left: 44px;
   width: 120px;
   height: 120px;
   border-radius: 20px;
@@ -112,12 +132,13 @@
 
   @media (min-width: $tablet-width) {
     grid-row: 1/4;
-    margin: 0 0 100px;
+    margin: 0 0 100px auto;
     width: 250px;
     height: 250px;
   }
 
   @media (min-width: $desktop-width) {
     height: 400px;
+    width: 400px;
   }
 }

@@ -41,6 +41,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     position: static;
+    padding: 0;
     width: auto;
     height: auto;
     box-shadow: none;
@@ -60,7 +61,8 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     margin-right: 40px;
 
     &:last-child {
