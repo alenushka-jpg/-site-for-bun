@@ -12,13 +12,15 @@
 }
 
 .footer__copyright p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 81px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   color: #d9d9d9;
-  text-align: center;
 }
 
 .footer__copyright a {
