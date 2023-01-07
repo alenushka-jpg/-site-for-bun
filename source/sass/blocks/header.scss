@@ -76,9 +76,29 @@
 }
 
 .header__list a {
+  position: relative;
   text-decoration: none;
   color: inherit;
   font-weight: 700;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 5%;
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: $main-color;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+  }
 }
 
 .header__burger {
