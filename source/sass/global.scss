@@ -37,7 +37,9 @@ img {
   }
 
   @media (min-width: $desktop-width) {
-    max-width: $desktop-width;
+    max-width: 1171px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
