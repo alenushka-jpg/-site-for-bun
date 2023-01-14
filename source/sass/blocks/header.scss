@@ -89,11 +89,13 @@
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
   }
 
-  &:hover::after,
-  &:focus::after {
-    width: 100%;
-    left: 0;
-    cursor: pointer;
+  @media (min-width: $desktop-width) {
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+      left: 0;
+      cursor: pointer;
+    }
   }
 }
 
@@ -117,8 +119,8 @@
 .header__close {
   display: none;
   position: absolute;
-  right: 29px;
-  top: 39px;
+  right: 30px;
+  top: 40px;
   padding: 0;
   width: 24px;
   height: 24px;
