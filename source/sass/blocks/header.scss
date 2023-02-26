@@ -52,6 +52,10 @@
     line-height: 18px;
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+  }
 }
 
 .header__list li {
@@ -90,6 +94,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 23px;
+
     &:hover::after,
     &:focus::after {
       width: 100%;
