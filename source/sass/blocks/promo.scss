@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 193px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,21 +43,20 @@
 .promo__paragraph {
   grid-column: 1/-1;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
+  line-height: 130%;
 
   &:first-of-type {
     grid-row: 2/3;
     font-size: 20px;
-    line-height: 23px;
     letter-spacing: -0.03em;
   }
 
   &:last-of-type {
     font-weight: 400;
     font-size: 16px;
-    line-height: 18px;
     margin-top: 0;
-    margin-bottom: 42px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $tablet-width) {
@@ -66,26 +66,23 @@
       margin-top: 0;
       margin-bottom: 29px;
       font-size: 26px;
-      line-height: 30px;
     }
 
     &:last-of-type {
-      margin-bottom: 37px;
+      margin-bottom: 30px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &:first-of-type {
-      margin-bottom: 33px;
+      margin-bottom: 25px;
       font-weight: 400;
       font-size: 36px;
-      line-height: 130%;
     }
 
     &:last-of-type {
       margin-bottom: 41px;
       font-size: 24px;
-      line-height: 28px;
     }
   }
 }
@@ -108,7 +105,7 @@
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 100px;
+    margin: 0;
     padding: 21px 14px 21px 15px;
     width: 210px;
     min-height: 60px;
