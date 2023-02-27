@@ -168,6 +168,8 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 39px;
+    font-size: 24px;
+    line-height: 130%;
 
     &:hover::after,
     &:focus::after {
@@ -175,5 +177,18 @@
       left: 0;
       cursor: pointer;
     }
+  }
+}
+
+.project__span svg {
+  width: 10px;
+  height: 10px;
+
+  @media (min-width: $desktop-width) {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 3px;
+    right: -30px;
   }
 }
